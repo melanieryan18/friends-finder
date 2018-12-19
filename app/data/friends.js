@@ -1,8 +1,8 @@
 // You should save your application's data inside of app/data/friends.js as an array of objects. Each of these objects should roughly follow the format below.
 
 var friendInput = [{
-  "name":"Ahmed",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "name":"Saba",
+  "photo":"https://i.ytimg.com/vi/hYvkSHYh_WQ/hqdefault.jpg",
   "scores":[
     5,
     1,
@@ -17,7 +17,7 @@ var friendInput = [{
   ]
 },{
   "name":"Mel",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"https://i.ytimg.com/vi/ktlQrO2Sifg/maxresdefault.jpg",
   "scores":[
     5,
     6,
@@ -30,7 +30,38 @@ var friendInput = [{
     4,
     1
   ]
-}];
+},{
+  "name":"Annette",
+  "photo":"https://assets.capitalfm.com/2018/23/lilliya-scarlett-instagram-1528814125-custom-0.png",
+  "scores":[
+    5,
+    6,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    4,
+    1
+  ]
+},{
+  "name":"Cat",
+  "photo":"https://image.freepik.com/free-photo/hair-style-street-fashion-beautiful-girl_1139-844.jpg",
+  "scores":[
+    5,
+    6,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    4,
+    1
+  ]
+}
+];
 
 
 module.exports = friendInput;
