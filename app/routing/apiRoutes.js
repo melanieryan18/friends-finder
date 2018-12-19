@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         var differences = [];
-        var match = {};
+        var matchUp = {};
         for (var i = 0; i < friendsData.length; i++) {
             var totals = 0;
             for (var k = 0; k < 10; k++) {
@@ -16,18 +16,12 @@ module.exports = function (app) {
                 totals += diff;
             }
             differences.push(totals);
+            var match = Math.min.apply(null, differences);
+            matchUp = friendsData[differences.indexOf(match)]
         }
+        res.json(matchUp);
         console.log(differences);
-
     });
 
-    // POST REQUESTS
-    // I added this below code so you could clear out 
-
-    // app.post("/api/clear", function (req, res) {
-    //     tableData.length = [];
-
-    //     res.json({ ok: true });
-    // });
 
 };
